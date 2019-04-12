@@ -1,0 +1,156 @@
+.plantlane-freegift-product-card {
+    display: inline-block;
+    width: 150px;
+    position: relative;
+    margin: 20px;
+    background: #fff;
+}
+
+.plantlane-freegift-badge {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    background: red;
+    color: #fff;
+    padding: 3px 10px;
+}
+
+.plantlane-freegift-product-tumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+    background: #f0f0f0;
+}
+
+.plantlane-freegift-product-tumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.plantlane-freegift-product-details {
+    padding: 10px 0px;
+}
+
+.plantlane-freegift-product-catagory {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ccc;
+    margin-bottom: 5px;
+}
+
+.plantlane-freegift-product-details h4 {
+    font-size: 16px;
+}
+
+.plantlane-freegift-product-details h4 a {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    color: #363636;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.plantlane-freegift-product-details h4 a:hover {
+    color: #f9a73a;
+}
+
+.plantlane-freegift-product-details p {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 10px;
+    color: #999;
+}
+
+.plantlane-freegift-product-bottom-details {
+    overflow: hidden;
+}
+
+.plantlane-freegift-product-bottom-details > .plantlane-freegift-product-links {
+    display: inline-block;
+    width: 40%;
+}
+
+.plantlane-freegift-product-bottom-details > .plantlane-freegift-product-price {
+    display: inline-block;
+    width: 60%;
+}
+
+.plantlane-freegift-product-price {
+    font-size: 18px;
+    color: #f9a73a;
+    font-weight: 600;
+}
+
+.plantlane-freegift-product-price small {
+    font-size: 80%;
+    font-weight: 400;
+    text-decoration: line-through;
+    display: block;
+    margin-right: 5px;
+}
+
+.plantlane-freegift-product-links {
+    text-align: right;
+}
+
+.plantlane-freegift-product-links a,
+.plantlane-freegift-product-links div {
+    display: inline-block;
+    margin-left: 10%;
+    color: #e1e1e1;
+    transition: 0.3s;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.plantlane-freegift-product-links div:hover {
+    color: #f9a73a;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .plantlane-freegift-product-card {
+        margin: 5px 2px 5px;
+        width: 32%;
+        min-width: 141px;
+        max-width: 220px;
+    }
+}
+
+
+@media (max-width: 575.98px) {
+    .plantlane-freegift-product-card {
+        margin: 5px 3px 5px;
+        width: 48%;
+        min-width: 141px;
+        max-width: 220px;
+    }
+
+    .plantlane-freegift-product-tumb {
+        max-height: 220px;
+    }
+
+    .plantlane-freegift-product-details h4 {
+        font-size: 14px;
+    }
+
+    .plantlane-freegift-product-details p {
+        font-size: 12px;
+    }
+
+    .plantlane-freegift-product-price {
+        font-size: 14px;
+    }
+
+    .plantlane-freegift-product-links div {
+        font-size: 16px;
+    }
+}

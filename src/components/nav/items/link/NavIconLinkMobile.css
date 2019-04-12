@@ -1,0 +1,15 @@
+.plantlane-nav-link-mobile-icon {
+	height: 30px;
+	cursor: pointer;
+}
+
+.plantlane-nav-link-mobile-icon-badge {
+	position: relative;
+	top: -10px;
+	margin-left: -10px;
+	padding: 1px 5px;
+	border-radius: 20px;
+	font-size: 10px;
+	font-weight: bold;
+	background-color: #8cb595;
+}

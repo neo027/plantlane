@@ -1,0 +1,13 @@
+.plantlane-logout-btn {
+	background-color: #ee8568;
+	color: #fff;
+	font-weight: 700;
+	border-radius: 20px;
+	margin: 0;
+}
+
+.plantlane-logout-btn:hover {
+	background-color: #ee8568;
+	color: #fff;
+	opacity: 0.8;
+}

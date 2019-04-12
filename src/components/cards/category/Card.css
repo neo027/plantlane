@@ -1,0 +1,48 @@
+.plantlane-category-card {
+	max-width: 220px;
+	max-height: 250px;
+	padding: 10px;
+	box-sizing: border-box;
+	display: inline-grid;
+	vertical-align: top;
+	text-align: center;
+}
+
+
+.plantlane-category-card img {
+	width: 200px;
+	height: 200px;
+	border-radius: 20px;
+	box-sizing: border-box;
+	object-fit: cover;
+}
+
+.plantlane-category-card-text {
+	color: #666;
+	font-weight: 500;
+}
+
+@media (max-width: 575.98px) {
+	.plantlane-category-card {
+		max-width: 150px;
+		max-height: 250px;
+		padding: 5px;
+		box-sizing: border-box;
+		display: inline-grid;
+		vertical-align: top;
+		text-align: center;
+	}
+
+
+	.plantlane-category-card img {
+		width: 130px;
+		height: 130px;
+		border-radius: 20px;
+		box-sizing: border-box;
+	}
+
+	.plantlane-category-card-text {
+		color: #666;
+		font-size: 14px;
+	}
+}

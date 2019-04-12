@@ -1,0 +1,67 @@
+/*
+	shades of primary 
+		- ee8568
+		- f48669
+		- fdeccc (lighter shade for background)
+*/
+
+.plantlane-text-primary {
+	color: #f48669 !important;
+}
+
+.plantlane-bg-primary {
+	background-color: #f48669;
+	color: #fff;
+}
+
+.plantlane-white-bg {
+	background-color: #fff;
+}
+
+.plantlane-text-secondry {
+	color: #17a2b8 !important;
+}
+
+.plantlane-hr-text {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
+  text-align: center;
+  height: 1.5em;
+  opacity: .5;
+}
+
+.plantlane-hr-text:after {
+	content: attr(data-content);
+	position: relative;
+	display: inline-block;
+	color: black;
+
+	padding: 0 .5em;
+	line-height: 1.5em;
+	/*// this is really the only tricky part, you need to specify the background color of the container element...*/
+	color: #111;
+	background-color: #fff;
+}
+
+.plantlane-hr-text:before {
+	content: '';
+	/*// use the linear-gradient for the fading effect
+	// use a solid background color for a solid bar*/
+	background: linear-gradient(to right, transparent, #111, transparent);
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	height: 1px;
+}
+
+.plantlane-btn-round {
+	border-radius: 50px;
+}
+
+.plantlane-right-container {
+	text-align: right;
+}

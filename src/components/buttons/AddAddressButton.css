@@ -1,0 +1,14 @@
+.plantlane-add-new-address-btn {
+	width: 290px;
+	height: 128px;
+	text-align: center;
+	font-size: 20px;
+	padding: 50px 0px !important;
+	color: #f48669;
+	cursor: pointer;
+}
+
+.plantlane-add-new-address-btn:hover {
+	font-weight: bold;
+	outline: 3px solid rgba(244,134,105, 0.5);
+}

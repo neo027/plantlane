@@ -1,0 +1,21 @@
+.plantlane-nav-link-icon {
+	height: 30px;
+	cursor: pointer;
+	margin: 10px 0px;
+}
+
+.plantlane-nav-link-icon-badge {
+	position: relative;
+	top: -10px;
+	margin-left: -10px;
+	display: inline-block;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+	background-color: #8cb595;
+}

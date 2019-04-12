@@ -1,0 +1,15 @@
+.list-group-item.active {
+	background-color: #f48669;
+	border-color: #f48669;
+}
+
+@media (max-width: 767.98px) {
+	.plantlane-mobile-col {
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+	.plantlane-mobile-row {
+		margin-left: 0px !important;
+		margin-right: 0px !important;
+	}
+}

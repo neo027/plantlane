@@ -1,0 +1,14 @@
+.plantlane-capitalize {
+	text-transform: uppercase;
+}
+
+a.t-decor-0:hover {
+	text-decoration: none !important;
+}
+
+
+.plantlane-hide-overflow {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}

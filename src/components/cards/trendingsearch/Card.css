@@ -1,0 +1,30 @@
+.plantlane-trendingsearch-card {
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,0.3);
+	background-color: #fff;
+	border: 1px solid #eee;
+	border-radius: 3px;
+	width: 100%;
+	max-width: 400px;
+	padding: 5px 10px;
+	font-size: 14px;
+	box-sizing: border-box;
+	display: inline-block;
+	margin: 5px 0px;
+}
+
+.plantlane-trendingsearch-card-text {
+	display: inline-block;
+	width: calc(100% - 30px);
+}
+
+.plantlane-trendingsearch-card-image {
+	width: 30px;
+	float: right;
+}
+
+@media (max-width: 575.98px) {
+	.plantlane-trendingsearch-card {
+		margin: 2px 0px;
+		box-shadow: none;
+	}
+}

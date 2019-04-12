@@ -1,0 +1,9 @@
+.plantlane-carousel-indicators {
+	height: 10px !important;
+	width: 10px !important;
+	border-radius: 50%;
+}
+
+.plantlane-carousel {
+	min-height: 300px;
+}

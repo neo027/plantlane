@@ -1,0 +1,9 @@
+.plantlane-address-card-container > address {
+	margin: 10px 5px;
+}
+
+@media (max-width: 576px) {
+	.plantlane-address-card-container > address {
+		margin: 10px 0px;
+	}
+}

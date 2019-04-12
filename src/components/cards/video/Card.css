@@ -1,0 +1,23 @@
+.plantlane-video-card {
+	padding: 10px;
+}
+
+.plantlane-video-card-iframe {
+	border-radius: 20px;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+
+.plantlane-video-card-text {
+	padding: 15px;
+	color: #444;
+}
+
+.plantlane-video-card-text h4 {
+	font-weight: 300;
+}
+
+.plantlane-video-card-text-meta span {
+	color: #f9a73a;
+}

@@ -1,0 +1,150 @@
+.plantlane-landing-benifits-icon-display {
+	display: flex;
+	width: 100%;
+	margin: auto;
+	justify-content: space-between;
+}
+
+.plantlane-landing-banner-register {
+	width: 100%;
+	min-height: 120px;
+	content: url('../../assets/banner-register.jpg');
+	cursor: pointer;
+}
+
+.plantlane-landing-categories-container {
+	display: flex;
+	max-width: 768px;
+	width: 100%;
+	margin: auto;
+	justify-content: space-between;
+	vertical-align: top;
+	flex-wrap: wrap;
+}
+
+.plantlane-landing-container {
+	width: 100%;
+	padding: 0px 80px 80px;
+}
+
+.plantlane-mobile-scroll-container {
+	width: 100%;
+	padding: 0px 80px;
+}
+
+.plantlane-landing-bg-color {
+	background-color: #f7f7f7;
+}
+
+.plantlane-landing-card-container {
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.plantlane-landing-trendingsearch-card-container {
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	justify-content: space-between;
+}
+
+.plantlane-landing-brand-container {
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	justify-content: center;
+}
+
+.landing-header {
+	font-weight: 400;
+	text-align: center;
+	color: #afafaf;
+	padding: 50px 0px 20px;
+}
+
+.plantlane-scroll-card-container {
+	overflow-x: auto;
+	flex-wrap: nowrap;
+}
+
+.plantlane-scroll-card-container::-webkit-scrollbar,
+.plantlane-mobile-scroll-card-container::-webkit-scrollbar {
+	display: none;
+}
+
+@media (max-width: 900px){
+	.plantlane-landing-trendingsearch-card-container {
+		justify-content: center;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.landing-header {
+		color: #afafaf;
+		font-size: 34px;
+	}
+
+	.plantlane-landing-benifits-icon-display {
+		justify-content: center;
+	}
+
+	.plantlane-landing-container {
+		padding: 0px 50px 80px;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.landing-header {
+		color: #333;
+		font-size: 28px;
+	}
+
+	.plantlane-landing-container {
+		padding: 0px 20px 80px;
+	}
+
+	.plantlane-landing-benifits-icon-display {
+		justify-content: center;
+	}
+
+	.plantlane-mobile-scroll-card-container {
+		overflow: auto;
+		flex-wrap: nowrap;
+	}
+
+	.plantlane-mobile-scroll-container {
+		padding: 0px 20px 80px;
+	}
+}
+
+@media (max-width: 575.98px) {
+	.landing-header {
+		font-size: 18px;
+		font-weight: 400;
+		text-align: center;
+		color: #333;
+		padding: 20px 0px 10px;
+	}
+
+	.plantlane-landing-categories-container, 
+	.plantlane-landing-benifits-icon-display {
+		justify-content: center;
+	}
+
+	.plantlane-landing-container {
+		padding: 0px 10px 30px;
+		justify-content: center;
+	}
+
+	.plantlane-mobile-scroll-container {
+		padding: 0px 20px;
+	}
+
+	.plantlane-mobile-scroll-card-container {
+		overflow-x: auto;
+		flex-wrap: nowrap;
+	}
+}

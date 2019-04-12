@@ -1,0 +1,44 @@
+.plantlane-checkout-page-items {
+	
+}
+
+.hrClass {
+	color: #000;
+	background-color: #000;
+	margin-bottom: 20px !important;
+}
+
+.plantlane-checkout-page-breadcrumb {
+	text-align: center;
+	margin-top: 40px;
+}
+
+.plantlane-checkout-page-breadcrumb li {
+	display: inline-block;
+	padding: 10px;
+	color: #999;
+	list-style: none;
+}
+
+.plantlane-checkout-page-breadcrumb li.active {
+	color: #f48669;
+}
+
+.plantlane-checkout-page-breadcrumb-item {
+	cursor: pointer;
+}
+
+.plantlane-checkout-item {
+	color: #666;
+}
+
+.plantlane-checkout-total {
+	font-size: 24px;
+}
+
+
+@media (max-width: 767.98px) {
+	.plantlane-checkout-page-breadcrumb{
+		display: none;
+	}
+}

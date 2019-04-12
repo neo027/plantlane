@@ -1,0 +1,77 @@
+.plantlane-icon-with-text-nav {
+	color: #879394;
+	width: 150px;
+	padding: 10px;
+	text-align: center;
+	box-sizing: border-box;
+	display: inline-flex;
+	flex-flow: column;
+}
+
+.plantlane-icon-with-text-nav > span {
+	font-size: 80px;
+	height: 100px;
+	text-align: center;
+}
+
+.plantlane-icon-with-text-nav > img {
+	height: 100px;
+	margin: auto;
+}
+
+.plantlane-icon-with-text-nav > div {
+	font-size: 14px;
+	height: 50px;
+	font-weight: 600;
+	text-align: center;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.plantlane-icon-with-text-nav {
+		max-width: 100px;
+		padding: 0px;
+	}
+
+	.plantlane-icon-with-text-nav > span {
+		font-size: 30px;
+		max-height: 70px;
+		text-align: center;
+	}
+
+	.plantlane-icon-with-text-nav > img {
+		max-height: 70px;
+		margin: auto;
+	}
+
+	.plantlane-icon-with-text-nav > div {
+		font-size: 10px;
+		max-height: 50px;
+		font-weight: 600;
+	}
+}
+
+@media (max-width: 576px) {
+	.plantlane-icon-with-text-nav {
+		max-width: 100px;
+		padding: 2px;
+	}
+
+	.plantlane-icon-with-text-nav > span {
+		font-size: 30px;
+		max-height: 50px;
+		text-align: center;
+	}
+
+	.plantlane-icon-with-text-nav > img {
+		max-height: 50px;
+		margin: auto;
+	}
+
+	.plantlane-icon-with-text-nav > div {
+		font-size: 7px;
+		max-height: 20px;
+		max-width: 70px;
+		margin: auto;
+		font-weight: 600;
+	}
+}

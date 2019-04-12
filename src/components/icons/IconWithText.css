@@ -1,0 +1,89 @@
+.plantlane-icon-with-text {
+	color: #879394;
+	width: 250px;
+	padding: 10px;
+	text-align: center;
+	box-sizing: border-box;
+	display: inline-flex;
+}
+
+.plantlane-icon-with-text > span {
+	font-size: 80px;
+	height: 100px;
+}
+
+.plantlane-icon-with-text > img {
+	height: 100px;
+}
+
+.plantlane-icon-with-text > div {
+	font-size: 14px;
+	font-weight: 600;
+	align-self: center;
+}
+
+.plantlane-icon-small-text {
+	max-width: 50px;
+}
+
+@media (min-width: 768px) and (max-width: 1070px){
+	.plantlane-icon-with-text > img {
+		height: 90px;
+	}
+	.plantlane-icon-with-text > div {
+		font-size: 12px;
+		font-weight: 600;
+		max-width: 100px;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+	.plantlane-icon-with-text {
+		padding: 0px;
+		flex-flow: column;
+	}
+
+	.plantlane-icon-with-text > span {
+		font-size: 30px;
+		max-height: 60px;
+		text-align: center;
+	}
+
+	.plantlane-icon-with-text > img {
+		max-height: 60px;
+		margin: auto;
+	}
+
+	.plantlane-icon-with-text > div {
+		font-size: 10px;
+		font-weight: 600;
+		max-width: 100px;
+	}
+}
+
+@media (max-width: 576px) {
+	.plantlane-icon-with-text {
+		max-width: 100px;
+		padding: 2px;
+		flex-flow: column;
+	}
+
+	.plantlane-icon-with-text > span {
+		font-size: 30px;
+		max-height: 50px;
+		text-align: center;
+	}
+
+	.plantlane-icon-with-text > img {
+		max-height: 50px;
+		margin: auto;
+	}
+
+	.plantlane-icon-with-text > div {
+		font-size: 7px;
+		max-height: 20px;
+		max-width: 70px;
+		margin: auto;
+		font-weight: 600;
+	}
+}

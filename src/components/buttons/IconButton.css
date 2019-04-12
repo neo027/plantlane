@@ -1,0 +1,31 @@
+.plantlane-btn-icon {
+	background-color: transparent;
+	color: #888;
+	box-sizing: border-box;
+	border: none;
+	cursor: pointer;
+}
+
+.plantlane-btn-icon-round {
+	border-radius: 50%;
+}
+
+.plantlane-btn-icon:focus {
+	outline: none;
+}
+
+.plantlane-btn-icon-animation:hover {
+	animation: icon-btn-animation .5s;
+}
+
+@keyframes icon-btn-animation{
+	0% {background-color: transparent;}
+	50% {background-color: #eee;}
+	100% {background-color: transparent;}
+}
+
+@media (max-width: 575.98px) {
+	.plantlane-btn-icon-animation:hover {
+		animation: none;
+	}
+}

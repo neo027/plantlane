@@ -1,0 +1,36 @@
+.plantlane-product-list-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: unset;
+}
+
+.plantlane-product-list-page {
+	max-width: 1100px;
+	margin: auto;
+}
+
+@media (max-width: 991px) {
+	.collection-product-wrapper .product-top-filter {
+		position: fixed;
+		width: 100%;
+		top: 125px;
+		left: 0;
+		z-index: 1020;
+		border: none !important;
+	}
+
+	.filter-main-btn {
+		margin: 0 10px !important;
+	}
+
+	.top-banner-wrapper {
+		padding-top: 30px;
+	}
+}
+
+@media (max-width: 572px) {
+	.collection-product-wrapper .product-top-filter {
+		top: 115px;
+	}
+}

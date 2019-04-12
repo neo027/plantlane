@@ -1,0 +1,11 @@
+.plantlane-navbrand-logo {
+	content: url('../../../../assets/logo.png');
+	width: 100px;
+}
+
+@media (max-width: 576px) {
+	.plantlane-navbrand-logo {
+		content: url('../../../../assets/logo.png');
+		width: 80px;
+	}
+}

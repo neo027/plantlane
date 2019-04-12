@@ -1,0 +1,33 @@
+.plantlane-btn-primary {
+	border: 1px solid #f08162 !important;
+    border-radius: 5px !important;
+    background: #ee8568 !important;
+    font-weight: bold !important;
+    color: #fff !important;
+}
+
+.plantlane-btn-primary:hover {
+	opacity: 0.8 !important;
+}
+
+.plantlane-btn-animation:hover {
+	animation: plantlane-btn-primary-animation .5s !important;
+}
+
+.plantlane-btn-primary:focus {
+	box-shadow: 0 0 0 0.2rem rgba(240, 129, 98, 0.4) !important;
+}
+
+@keyframes plantlane-btn-primary-animation {
+	0% {opacity: 0.9;}
+	10% {opacity: 0.8;}
+	20% {opacity: 0.7;}
+	30% {opacity: 0.6;}
+	40% {opacity: 0.5;}
+	50% {opacity: 0.5;}
+	60% {opacity: 0.6;}
+	70% {opacity: 0.7;}
+	80% {opacity: 0.8;}
+	90% {opacity: 0.9;}
+	100% {opacity: 0.8;}
+}

@@ -1,0 +1,18 @@
+.plantlane-address-card-btn {
+	font-size: 12px;
+	border: none;
+	color: #f48669;
+	font-weight: 600;
+	padding: 5px;
+	margin-top: 5px;
+}
+
+.plantlane-address-card {
+	width: 305px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.plantlane-address-card:hover {
+	outline: 3px solid rgba(244,134,105, 0.5);
+}

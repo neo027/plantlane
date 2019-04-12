@@ -1,0 +1,70 @@
+.plantlane-nav-search-box {
+	font-size: 10px !important;
+	min-width: 200px !important;
+	background-color: #f7f7f7 !important;
+	border: 1px solid #fff !important;
+}
+
+.plantlane-nav-search-box:focus {
+	border: 1px solid #fff !important;
+	background-color: #f7f7f7 !important;
+	box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.4) !important;
+}
+
+.plantlane-search-icon {
+	position: relative;
+	left: -20px !important;
+	color: #afafaf !important;
+	font-size: 14px !important;
+}
+
+@media (max-width: 1199.98px){
+	.plantlane-nav-search-box {
+		padding-left: 30px !important;
+	}
+
+	.plantlane-search-icon {
+		position: absolute;
+		left: 35px !important;
+		margin-top: -22px !important;
+	}
+
+	.search-dropdown {
+		top: 110px !important;
+		width: calc(100% - 50px) !important;
+	}
+}
+
+/*.plantlane-nav-search-box:focus {
+	border: 1px solid #f08162;
+	box-shadow: 0 0 0 0.2rem rgba(240, 129, 98, 0.4);
+}*/
+
+.plantlane-nav-search-box:focus ~ .search-dropdown,
+.search-dropdown:hover {
+	display: block;
+}
+
+
+.search-dropdown {
+	display: none;
+	padding: 10px;
+	position: absolute;
+	width: 400px;
+	top: 60px;
+	border: solid 1px;
+}
+
+.product-search-card > img {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+}
+
+.product-search-card > div {
+	display: inline-block;
+	width: calc(100% - 100px);
+	vertical-align: top;
+	padding: 0px 0px 0px 10px;
+	font-size: 12px;
+}

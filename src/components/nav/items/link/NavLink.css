@@ -1,0 +1,45 @@
+.plantlane-nav-link {
+	font-size: 12px;
+}
+
+.plantlane-nav-link.active > a {
+	color: #f48669 !important;
+	font-weight: 600;
+}
+
+.plantlane-dropdown-nav {
+	position: relative;
+    display: inline-block;
+    padding: 15px 0px;
+    margin: 0px;
+}
+
+.plantlane-dropdown-nav-content {
+	display: none;
+    position: absolute;
+    padding: 20px;
+    margin-top: 15px;
+    width: 700px;
+    min-height: 350px;
+    background: url('../../../../assets/menu-hover-bg.png') no-repeat;
+    background-color: #fff;
+    background-position: right bottom; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+.plantlane-dropdown-nav-link {
+	font-size: 12px;
+}
+
+.plantlane-dropdown-nav-hr {
+	max-width: 500px;
+	margin-left: 0;
+}
+
+.plantlane-dropdown-nav-icons {
+	position: absolute;
+	bottom: 0;
+}
+
+.plantlane-dropdown-nav:hover .plantlane-dropdown-nav-content {display: block;}

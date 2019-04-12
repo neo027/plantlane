@@ -1,0 +1,111 @@
+.plantlane-cart {
+	display: none;
+	position: fixed;
+	right: -100%;
+	top: 0;
+	height: 100%;
+	max-width: 500px;
+	width: 100%;
+	background-color: #555;
+	color: #fff;
+	animation: cart-show .3s;
+	z-index: 1080 !important;
+	border-left: 4px solid #555;
+}
+
+.plantlane-cart.show {
+	display: block;
+	right: 0;
+}
+
+@keyframes cart-show {
+	from {right: -100%;}
+	to {right: 0;}
+}
+
+.plantlane-cart-tab,
+.plantlane-cart-tab:hover {
+	color: #fff;
+}
+
+.plantlane-cart-tab-control-count {
+	background-color: #f08162;
+	color: #fff;
+	display: inline-block;
+    height: 26px;
+    width: 26px;
+    line-height: 26px;
+    -moz-border-radius: 13px;
+    border-radius: 13px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+.plantlane-cart-tab-header {
+	height: 10%;
+	font-size: 12px;
+}
+
+
+.plantlane-cart-tab-data {
+	height:75%;
+	overflow: auto;
+	background-color: #fff;
+}
+
+.plantlane-cart-tab-footer {
+	position: absolute;
+	bottom: 0;
+	height: 15%;
+	width: 100%;
+	background-color: #eee;
+}
+
+.plantlane-cart-tab-footer-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 90%;
+	transform: translate(-50%, -50%);
+}
+
+.plantlane-pincode-check {
+	font-size: 12px !important;
+	max-width: 70px !important;
+	display: inline-block !important;
+	height: 20px !important;
+}
+
+.plantlane-pincode-check:focus {
+	border: 1px solid #f08162;
+	box-shadow: 0 0 0 0.1rem rgba(240, 129, 98, 0.4);
+}
+
+.plantlane-pincode-check-btn {
+	height: 20px !important;
+	padding: 1px 5px !important;
+	font-size: 12px !important;
+}
+
+.plantlane-cart-close-btn {
+	color: #ddd;
+}
+
+.plantlane-cart-checkout-btn {
+	width: 100%;
+}
+
+.plantlane-cart-close-btn:hover {
+	color: #fff !important;
+}
+
+.plantlane-cart-close-btn:focus {
+	color: #fff !important;
+	outline: none;
+}
+
+.plantlane-cart-close-btn-span {
+	font-size: 12px;
+}
