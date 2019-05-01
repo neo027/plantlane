@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 // import crypto from 'crypto';
-// import {Redirect} from 'react-router-dom';
+import {withRouter} from 'react-router-dom';
 // import swal from 'sweetalert';
 // import axios from 'axios';
 
@@ -33,7 +33,12 @@ class ManagePayment extends Component {
 		.then(data => {
 			removeDeliveryState();
 			this.props.resetCart();
-			this.redirectToPaymentPage(data);
+			if(code === 'payu'){
+				this.redirectToPaymentPage(data);
+			}
+			else {
+				this.props.history.push('/payment/success/cod');
+			}
 		});
 	}
 
@@ -96,4 +101,4 @@ class ManagePayment extends Component {
 	}
 }
 
-export default ManagePayment;
+export default withRouter(ManagePayment);

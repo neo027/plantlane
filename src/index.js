@@ -6,8 +6,8 @@ import axios from 'axios';
 import {Provider} from 'react-redux';
 import store from './store';
 
-import {getToken} from './utilities/auth';
-import {getCart, getWishList} from './utilities/cart';
+import {getToken, removeToken} from './utilities/auth';
+import {getCart, getWishList, removeUserCart, emptyCart, removeDeliveryState} from './utilities/cart';
 
 import {userLoggedIn, userLoggedOut} from './actions/auth';
 import {hydrateCart} from './actions/cart';
@@ -31,11 +31,16 @@ import * as serviceWorker from './serviceWorker';
 axios.defaults.baseURL = config.api.baseURL;
 axios.defaults.headers.post['Content-Type'] = 'application/json';
 
-axios.interceptors.response.use(function (response) {
+axios.interceptors.response.use((response) => {
 	return response;
-}, function (error) {
+}, (error) => {
+	console.log(error.response.status)
 	if(error.response.status === 401){
 		store.dispatch(userLoggedOut());
+		removeUserCart();
+   		emptyCart();
+      	removeDeliveryState();
+   		removeToken();
 	}
 
 	return Promise.reject(error);

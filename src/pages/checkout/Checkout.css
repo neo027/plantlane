@@ -36,6 +36,11 @@
 	font-size: 24px;
 }
 
+.swal-button--confirm:hover {
+	color: #fff !important;
+    background-color: #c82333 !important;
+    border-color: #bd2130 !important;
+}
 
 @media (max-width: 767.98px) {
 	.plantlane-checkout-page-breadcrumb{

@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
+import swal from 'sweetalert';
 
-import {fetchOrderHistory, cancelOrder} from '../../api/orders';
+import {fetchOrderHistory, cancelOrder, cancelOrderPostProcessing, returnOrder} from '../../api/orders';
 
 
 class OrderHistory extends Component {
@@ -34,8 +35,66 @@ class OrderHistory extends Component {
 	}
 
 
-	handleReturn = (orderId) => {
+	handleCancelOrderProcessing = (orderToCancel) => {
+		cancelOrderPostProcessing({
+			entity:{
+				entity_id:orderToCancel.entity_id,
+				increment_id:orderToCancel.increment_id,
+				status:'canceled'
+			}
+		})
+		.then(data => {
+			let orders = [...this.state.orders];
+				let idx = orders.findIndex(order => order.entity_id === orderToCancel.entity_id);
+				if(idx > -1){
+					orders[idx].status = data.status;
+				}
+				this.setState({orders});
+		})
+		.catch(error => this.setState({error:error.response.data}));
+	}
 
+	handleReturnOrder = (orderToReturn) => {
+		let wrapper = document.createElement('div');
+		ReactDOM.render(<textarea className="form-control" onChange={e => swal.setActionValue(e.target.value)}></textarea>, wrapper);
+		let el = wrapper.firstChild;
+		console.log(orderToReturn.items)
+		swal({
+		  text: 'Reason to return',
+		  content: el,
+		  buttons: {
+		  	cancel:'Cancel',
+		    confirm: {
+		      text:'Return',
+		      className:'btn-danger',
+		      value: 0
+		    }
+		  },
+		})
+		.then((value) => {
+			if(!(value === null || value === undefined || (typeof value === 'string' && value.trim() === '') || value === 0)) {
+				returnOrder({
+					rmaDataObject:{
+						order_id:orderToReturn.entity_id,
+						order_increment_id:orderToReturn.increment_id,
+						items: orderToReturn.items.map(item => (
+					      {
+					        order_item_id: item.item_id,
+					        qty_requested: item.qty_shipped,
+					        reason:value
+					      }
+						)),
+					}
+				})
+				.then(resp => console.log(resp))
+			}
+			else if (value === 0 || (typeof value === 'string' && value.trim() === '')){
+				this.handleReturnOrder(orderToReturn);
+			}
+			else {
+				console.log('no value specified!', value);
+			}
+		});
 	}
 
 	render(){
@@ -121,15 +180,21 @@ class OrderHistory extends Component {
 									</table>
 								</div>
 								{
+									(order.status === 'complete') && 
+										<div className="text-right">
+											<button onClick={() => this.handleReturnOrder(order)} className="btn btn-sm btn-danger">Return Order</button>
+										</div>
+								}
+								{
 									(order.status === 'pending') && 
 									<div className="text-right">
 										<button onClick={() => this.handleCancelOrder(order.entity_id)} className="btn btn-sm btn-danger">Cancel Order</button>
 									</div>
 								}
 								{
-									order.status !== 'pending' && order.status !== 'canceled' && 
+									order.status !== 'pending' && order.status !== 'canceled' && order.status !== 'complete' && 
 									<div className="text-right">
-										<button onClick={() => this.handleReturn(order.entity_id)} className="btn btn-sm btn-danger">Cancel / Return</button>
+										<button onClick={() => this.handleCancelOrderProcessing(order)} className="btn btn-sm btn-danger">Cancel Order</button>
 									</div>
 								}
 							</div>

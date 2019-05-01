@@ -17,6 +17,7 @@ instance.interceptors.response.use((response) => {
    		emptyCart();
       removeDeliveryState();
    		removeToken();
+      window.location.replace('/');
    }
    return Promise.reject(error);
 });
